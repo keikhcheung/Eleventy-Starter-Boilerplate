@@ -7,11 +7,11 @@ media_folder: 'src/assets/images/posts' # Media files will be stored in the repo
 public_folder: '/assets/images/posts' # The src attribute for uploaded media will begin with assets/images/posts
 
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
+  - name: "writing" # Used in routes, e.g., /admin/collections/blog
+    label: "Writing" # Used in the UI
     folder: "src/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{slug}}" # Filename template, e.g., "{{year}}-{{month}}-{{day}}-{{slug}}" for YYYY-MM-DD-title.md
     editor:
       preview: false # Disable the editor preview and use instead 'preview links'
     fields: # The fields for each document, usually in front matter
